@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@500;600&family=Cairo:wght@200;300;400;500;600;700;800;900&family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Tajawal:wght@200;300;400;500;700;800;900&display=swap"
+        rel="stylesheet">
+
+
+
+    <title>Document</title>
+
+    <style>
+        * {
+            direction: rtl;
+            font-family: 'Roboto Condensed', sans-serif;
+            font-family: 'Cairo', sans-serif;
+            font-family: 'Roboto', sans-serif;
+            font-family: 'Barlow Semi Condensed', sans-serif;
+            font-family: 'Tajawal', sans-serif;
+            padding: 0;
+            margin: 0;
+        }
+
+        body {
+            background-color: #0181BD;
+        }
+
+        .container {
+            display: flex;
+            justify-content: center;
+            padding-top: 5%;
+            flex-wrap: wrap;
+        }
+
+        .Login {
+            padding-top: 80px;
+            background-color: #ffffff;
+            height: 500px;
+            width: 500px;
+            box-shadow: 0 4px 13px 0 rgb(4 3 3 / 20%);
+            transition: 0.3s;
+        }
+
+
+        input {
+            background-color: #eee;
+            border: none;
+            padding: 12px 15px;
+            margin: 8px 0;
+            width: 100%;
+            font-weight: bold;
+        }
+
+
+        button {
+            border-radius: 20px;
+            border: 1px solid #FFD124;
+            background-color: #FFD124;
+            color: black;
+            font-size: 15px;
+            font-weight: bold;
+            padding: 12px 45px;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            transition: transform 80ms ease-in;
+        }
+
+
+        button:active {
+            transform: scale(0.95);
+        }
+
+
+        form {
+            background-color: #FFFFFF;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            padding: 0 82px;
+            height: 68%;
+            text-align: center;
+
+
+        }
+
+        input {
+            background-color: #eee;
+            border: none;
+            padding: 12px 15px;
+            margin: 8px 0;
+            width: 100%;
+        }
+
+        a {
+            color: rgb(0, 0, 0);
+            font-size: 14px;
+            text-decoration: none;
+            margin: 15px 0;
+            font-weight: 800;
+        }
+
+        h1,
+        p {
+            text-align: center;
+        }
+
+        .Login-r {
+            padding-top: 80px;
+            background-color: #ffffff;
+            height: 500px;
+            width: 500px;
+        }
+
+        .logo {
+            display: flex;
+            justify-content: space-evenly;
+            padding: 10px;
+            flex-wrap: wrap;
+
+        }
+
+        .logo img {
+            margin-left: -29px;
+        }
+
+        .logo p {
+            font-size: 45px;
+            padding: 35px;
+            color: #ebebeb;
+        }
+
+        .Login:first-child {
+            background-color: #1591cb;
+        }
+
+        .formSing {
+            background-color: #1591cb;
+        }
+
+        .dot {
+            height: 50px;
+            width: 50px;
+            background-color: #FFD124;
+            border-radius: 50%;
+            position: absolute;
+            top: 54%;
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+        }
+
+        .bookingNow a {
+            display: flex;
+            justify-content: center;
+            text-decoration: none;
+            background-color: #FFD124;
+            padding: 15px;
+            text-decoration: none;
+            text-align: center;
+            font-weight: bold;
+            width: 50.5%;
+            margin: auto;
+            flex-wrap: wrap;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="logo">
+        <p>جــــامـــعــة طــيــبــة</p>
+        <img src="imgs/logo.png">
+        <p>نظام حجز الملاعب </p>
+    </div>
+
+    <div class="container">
+
+
+        <div>
+
+            <div class="Login">
+                <h1>تسجيل الدخول</h1>
+                <p> سجل دخولك لحجز المواعيد </p>
+
+                <form class="formSing" action="#">
+                    <input type="email" placeholder="الايميل" />
+                    <input type="password" placeholder="كلمة المرور" />
+                    <a href="RestPassword.html">هل نسيت كلمة السر ؟</a>
+                    <button>تسجيل الدخول</button>
+                </form>
+            </div>
+        </div>
+
+        <span class="dot">
+            <h4>او</h4>
+        </span>
+
+
+        <div class="Login">
+
+            <h1>أنشاء حساب</h1>
+            <p> أنشاء حساب لحجز المواعيد </p>
+            <br>
+            <form class="formSing-in" action="#">
+                <input type="text" placeholder="الاسم الاول" />
+                <input type="text" placeholder="الاسم الاخير" />
+                <input type="number" placeholder="الرقم الجامعي" />
+                <input type="email" placeholder="الايميل" />
+                <input type="password" placeholder="كلمة المرور" />
+                <br>
+                <button>تسجيل</button>
+            </form>
+
+
+        </div>
+
+
+    </div>
+
+    <div class="bookingNow">
+        <ul>
+            <li><a href="Home.html">الرجوع الى الصفحة الرئيسية</a> </li>
+        </ul>
+    </div>
+
+</body>
+
+</html>
